@@ -1,0 +1,20 @@
+{
+  "name": "johnSmith",
+  "version": "1",
+  "description": "Replaces every username with John Smith",
+  "icons": { "128": "icon_128.png" },
+  "permissions": ["history"],
+  "content_scripts": [
+    {
+      "matches": ["*://plus.google.com/*"],
+      "js": ["jquery.js", "googleplus.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["*://www.facebook.com/*"],
+      "js": ["jquery.js", "facebook.js"],
+      "run_at": "document_end"
+    }
+
+  ]
+}
