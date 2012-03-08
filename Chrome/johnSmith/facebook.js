@@ -1,11 +1,22 @@
 jQuery(function($) { 
   setInterval(function() {
 
-    $("a.actorName, .actorName a, .UIImageBlock_ICON_Content a, .passiveName, .headerTinymanName, .fbxWelcomeBoxName, .profileFriendsText a, .ego_title, .UIImageBlock_Content>div>a, .ellipsis, .profileName, span.name").each(function() { 
+    $(".friendSubtitle.fwb, #fbTimelineHeadline .name h2 a,  a.actorName, .UIImageBlock_Content.UIImageBlock_SMALL_Content .fcg .fwb a, .actorName a, .UIImageBlock_ICON_Content a, .passiveName, .headerTinymanName, .fbxWelcomeBoxName, .profileFriendsText a, .ego_title, .UIImageBlock_Content>div>a, .ellipsis, .profileName, span.name").each(function() { 
         $(this).text("John Smith");
     });
+
+
+/*
+
+.UIImageBlock_Content.UIImageBlock_SMALL_Content .fcg .fwb a,
+
+
+       $("a.actorName, .actorName a, .UIImageBlock_ICON_Content a, .passiveName, .headerTinymanName, .fbxWelcomeBoxName, .profileFriendsText a, .ego_title, .UIImageBlock_Content>div>a, .ellipsis, .profileName, span.name").each(function() { 
+        $(this).text("John Smith");
+    });
+*/
  
-    $(".profilePic, .uiProfilePhoto, .profile-friends .img, .fbProfileBrowserList .img, .HovercardOverlay .img, .profile-picture .img, .fbxWelcomeBoxImg, .fbChatOrderedList .pic, .friendBrowserPhotoWrapper img").each(function() { 
+    $(".fbTimelineFacepile img, .friend.img, .profilePic, .profilePic img, .uiProfilePhoto, .profile-friends .img, .fbProfileBrowserList .img, .HovercardOverlay .img, .profile-picture .img, .fbxWelcomeBoxImg, .fbChatOrderedList .pic, .friendBrowserPhotoWrapper img").each(function() { 
         $(this).attr("src", "http://profile.ak.fbcdn.net/static-ak/rsrc.php/v1/yo/r/UlIqmHJn-SK.gif");
     });
 
